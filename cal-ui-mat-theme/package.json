@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "sass --watch src/style.scss:dist/style.css --watch",
+    "start": "sass --watch src/style.scss:dist/cal-ui-theme.css --watch",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@angular/material": "^10.1.2",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3"
-  }
+  },
+  "dependencies": {}
 }
