@@ -2,18 +2,15 @@
   "name": "cal-ui-mat-theme",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js",
+    "start": "sass --watch src/style.scss:dist/style.css --watch",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2"
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3"
   }
 }
