@@ -1,0 +1,16 @@
+@import "./colors";
+
+$cal-connect-primary: mat-palette($cal-connect-blue);
+$cal-connect-accent: mat-palette($cal-connect-gray-black);
+
+$cal-connect-warn: mat-palette($mat-red);
+
+$cal-connect-theme: mat-light-theme(
+  (
+    color: (
+      primary: $cal-connect-primary,
+      accent: $cal-connect-accent,
+      warn: $cal-connect-warn,
+    ),
+  )
+);

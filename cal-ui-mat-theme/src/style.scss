@@ -1,27 +1,11 @@
 @import "../node_modules/@angular/material/theming";
 
-@import "./fonts";
-@import "./colors";
+@import "theming";
+@import "typography";
 
-$general-typography: mat-typography-config(
-  $font-family: "Ploni",
-);
+@import "custom-components-theme";
 
 @include mat-core($general-typography);
 
-$cal-connect-primary: mat-palette($cal-connect-blue);
-$cal-connect-accent: mat-palette($cal-connect-gray-black);
-
-$cal-connect-warn: mat-palette($mat-red);
-
-$cal-connect-theme: mat-light-theme(
-  (
-    color: (
-      primary: $cal-connect-primary,
-      accent: $cal-connect-accent,
-      warn: $cal-connect-warn,
-    ),
-  )
-);
-
 @include angular-material-theme($cal-connect-theme);
+@include custom-components-theme($cal-connect-theme);
