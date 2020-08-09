@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "sass --watch src/style.scss:dist/cal-ui-theme.css --watch --style compressed",
-    "build": "webpack --config webpack.prod.js"
+    "start": "sass --watch src/style.scss:dist/cal-ui-theme.css --watch --style compressed"
   },
   "keywords": [],
   "author": "",
